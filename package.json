@@ -16,7 +16,10 @@
     "url": "https://github.com/alcat2008/node-demo/issues"
   },
   "homepage": "https://github.com/alcat2008/node-demo#readme",
-  "dependencies": {
-    "express": "^4.14.0"
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb-base": "^4.0.0",
+    "eslint-plugin-import": "^1.10.2"
   }
 }
