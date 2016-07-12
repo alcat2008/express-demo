@@ -1,2 +1,2 @@
-# express-demo
-Demo of express
+# node-demo
+Demo of node
