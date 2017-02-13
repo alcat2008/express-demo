@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DictionaryCategorys version="1.0.4">
+  <!--    FOR COMMON-->
+  <DictionaryCategory>
+    <Code>YES_OR_NO</Code>
+    <Value>是否(YES_OR_NO)</Value>
+    <DictionaryItems>
+      <DictionaryItem>
+        <Code>Y</Code>
+        <Value>是</Value>
+        <DisplaySequence>1</DisplaySequence>
+      </DictionaryItem>
+      <DictionaryItem>
+        <Code>N</Code>
+        <Value>否</Value>
+        <DisplaySequence>2</DisplaySequence>
+      </DictionaryItem>
+    </DictionaryItems>
+  </DictionaryCategory>
+  <DictionaryCategory>
+    <Code>TRUE_OR_FALSE</Code>
+    <Value>是否(TRUE_OR_FALSE)</Value>
+    <DictionaryItems>
+      <DictionaryItem>
+        <Code>true</Code>
+        <Value>是</Value>
+        <DisplaySequence>1</DisplaySequence>
+      </DictionaryItem>
+      <DictionaryItem>
+        <Code>false</Code>
+        <Value>否</Value>
+        <DisplaySequence>2</DisplaySequence>
+      </DictionaryItem>
+    </DictionaryItems>
+  </DictionaryCategory>
+</DictionaryCategorys>

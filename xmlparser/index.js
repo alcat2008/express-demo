@@ -5,9 +5,14 @@ const parseString = require('xml2js').parseString;
 
 const debug = require('debug')('xmlparser:*');
 
-const dictionary = '/Users/alcat/git/be-lease-core-dsl/dictionary/dictionary.xml';
+function parseNumbers(str) {
+  if (!isNaN(str)) {
+    str = str % 1 === 0 ? parseInt(str, 10) : parseFloat(str);
+  }
+  return str;
+}
 
-const path = dictionary;
+const path = './dictionary.xml';
 
 fs.readFile(path, (fsError, buffer) => {
   if (fsError) {
@@ -15,7 +20,13 @@ fs.readFile(path, (fsError, buffer) => {
     debug(fsError.message);
   } else {
     parseString(buffer.toString(),
-      { explicitArray: false, mergeAttrs: true },
+      {
+        trim: true,
+        explicitArray: false,
+        mergeAttrs: true,
+        // valueProcessors: [parseNumbers],
+        // attrValueProcessors: [parseNumbers],
+      },
         (parseError, result) => {
           if (parseError) {
             debug('parse error: ' + path);
