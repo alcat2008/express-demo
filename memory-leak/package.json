@@ -1,0 +1,16 @@
+{
+  "name": "memory-leak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node-gyp configure build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "heapdump": "^0.3.9",
+    "memwatch-next": "^0.3.0"
+  }
+}
