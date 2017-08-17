@@ -14,5 +14,6 @@
     "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
     "quote-props": ["error", "consistent-as-needed", { "keywords": true }],
     "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "no-console": ["off"],
   }
 }
